@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: hng14-stage2-api
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    nativeEnvironments:
+      - build-essential
+      - libcairo2-dev
+      - libpango1.0-dev
+      - libjpeg-dev
+      - libgif-dev
+      - librsvg2-dev
